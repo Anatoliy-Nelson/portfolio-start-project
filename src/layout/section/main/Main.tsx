@@ -3,25 +3,22 @@ import styled from "styled-components";
 import photo from '../../../assets/images/Cap-and-hidie.png'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Projects} from "../projects/Projects";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
         <StyledMain>
             <FlexWrapper align={"center"} justify={"space-around"}>
-                <div>
-                        <h2>Elias is a web designer and front-end developer</h2>
-                        <span>He crafts responsive websites where technologies meet creativity</span>
-                        <button>Contact me!!</button>
-                </div>
-                <div>
-                    <Photo src={photo} alt=""/>
-                    <span>Currently working on Portfolio</span>
-                </div>
-                <div>
-                    <h3>With great power comes great electricity bill</h3>
-                    <p>- Dr. Wh</p>
-                </div>
+                <StyledH1>Elias is a web designer and front-end developer</StyledH1>
+                <StyledP>He crafts responsive websites where technologies meet creativity</StyledP>
+                <StyledButton>Contact me!!</StyledButton>
+                <StyledPhoto src={photo} alt=""/>
+                <StyledP>Currently working on Portfolio</StyledP>
             </FlexWrapper>
+            <Icon iconId="quote"/>
+            <StyledH3>With great power comes great electricity bill</StyledH3>
+            <Icon iconId="quote"/>
+            <StyledH3>- Dr. Who</StyledH3>
         </StyledMain>
 
 );
@@ -32,16 +29,24 @@ min-height: 100vh;
 
 `
 
-const Photo = styled.img`
+export const StyledPhoto = styled.img`
 width: 457px;
 height: 386px;
 object-fit: cover;
 
 `
-const StyledH2 = styled.h2`
+const StyledH1 = styled.h1`
+
+`
+
+export const StyledP = styled.p`
 
 `
 
 const StyledH3 = styled.h3`
+
+`
+
+export const StyledButton = styled.button`
 
 `
