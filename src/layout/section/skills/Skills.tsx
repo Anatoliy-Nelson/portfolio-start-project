@@ -9,7 +9,7 @@ export const Skills = () => {
             <SectionTitle></SectionTitle>
             <FlexWrapper>
                 <Skill>
-                    <Icon iconId={}/>
+                    <Icon iconId={"discord"}/>
                     <SkillText></SkillText>
                     <SkillTitle></SkillTitle>
                     <SkillText></SkillText>
@@ -22,4 +22,19 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     
+`
+const SectionTitle = styled.section`
+    
+`
+const Skill = styled.section`
+
+`
+const SkillText = styled.section`
+    
+`
+const SkillTitle = styled.section`
+
+`
+const Link = styled.section`
+
 `
