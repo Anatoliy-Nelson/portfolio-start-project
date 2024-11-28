@@ -1,24 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Menu = () => {
+export const Menu = (props: {menuItems: Array <string>}) => {
     return (
         <StyledMenu>
             <ul>
+
+                {props.menuItems.map((item) => {
+                   return <li>
+                        <a href="">{item}</a>
+                    </li>
+                })}
+
                 <li>
-                    <a href="">#home</a>
-                </li>
-                <li>
-                    <a href="">#works</a>
-                </li>
-                <li>
-                    <a href="">#about-me</a>
-                </li>
-                <li>
-                    <a href="">#contcts</a>
-                </li>
-                <li>
-                    <a href="">EN</a>
+                    <select name="lang" id="lang-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="ua">UA</option>
+                    </select>
                 </li>
             </ul>
         </StyledMenu>

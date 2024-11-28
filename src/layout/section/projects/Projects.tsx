@@ -9,14 +9,14 @@ export const Projects = () => {
     return (
         <StyledProjects>
             <StyledH2># projects</StyledH2>
-            <StyledButton>View all ~~></StyledButton>
+            <StyledButton>View all</StyledButton>
             <FlexWrapper>
                 <StyledPhoto src={photo} alt=""/>
                 <StyledP>HTML SCSS Python Flask</StyledP>
                 <StyledH4>ChertNodes</StyledH4>
                 <StyledP>Minecraft servers hosting </StyledP>
-                <StyledButton>Live <~></StyledButton>
-                <StyledButton>Cached ></StyledButton>
+                <StyledButton>Live</StyledButton>
+                <StyledButton>Cached</StyledButton>
             </FlexWrapper>
         </StyledProjects>
     );
